@@ -1,0 +1,277 @@
+body {
+  font-size: .875rem;
+}
+
+.feather {
+  width: 16px;
+  height: 16px;
+  vertical-align: text-bottom;
+}
+
+/*
+ * Sidebar
+ */
+
+.sidebar {
+  min-width: 215px;
+  width: 215px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100; /* Behind the navbar */
+  padding: 48px 0 0; /* Height of navbar */
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+}
+
+.sidebar-sticky {
+  position: relative;
+  top: 0;
+  height: calc(100vh - 48px);
+  padding-top: .5rem;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+@supports ((position: -webkit-sticky) or (position: sticky)) {
+  .sidebar-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+  }
+}
+
+.sidebar .nav-link {
+  font-weight: 500;
+  color: #333;
+}
+
+.sidebar .nav-link .feather {
+  margin-right: 4px;
+  color: #999;
+}
+
+.sidebar .nav-link.active {
+  color: #007bff;
+}
+
+.sidebar .nav-link:hover .feather,
+.sidebar .nav-link.active .feather {
+  color: inherit;
+}
+
+.sidebar-heading {
+  font-size: .75rem;
+  text-transform: uppercase;
+}
+
+/*
+ * Navbar
+ */
+
+.navbar-brand {
+  max-width: 215px;
+  min-width: 215px;
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  background-color: rgba(0, 0, 0, .25);
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+}
+
+.navbar .navbar-toggler {
+  top: .25rem;
+  right: 1rem;
+}
+
+.navbar .form-control {
+  padding: .75rem 1rem;
+  border-width: 0;
+  border-radius: 0;
+}
+
+.form-control-dark {
+  color: #fff;
+  background-color: rgba(255, 255, 255, .1);
+  border-color: rgba(255, 255, 255, .1);
+}
+
+.form-control-dark:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
+}
+
+.navbar {
+  justify-content: start;
+  min-width: 1295px;
+  width: 100%;
+  position: fixed
+}
+
+.title {
+  margin-left: 10px;
+  color: white;
+  font-size: 20px;
+}
+
+
+
+.compressor {
+  padding-left: 42px;
+  margin-bottom: 20px;
+}
+
+.input-head {
+  position: absolute;
+  left: 215px;
+  top: 125px;
+}
+
+.output-head {
+  position: absolute;
+  left: 875px;
+  top: 125px;
+}
+
+.select-gas {
+  width: 187px;
+  position: absolute;
+  left: 24px;
+  top: 165px;
+  background-color: #f2f2f2
+}
+
+.input-parameteres {
+  width: auto;
+  position: absolute;
+  left: 218px;
+  top: 216px;
+}
+
+.output-parameteres {
+  width: auto;
+  position: absolute;
+  left: 710px;
+  top: 216px;
+}
+
+.table td {
+  vertical-align: middle;
+}
+
+.parameteres-head {
+  width: 202px;
+}
+
+.value-head {
+  width: 62px;
+}
+
+.bi-book {
+  margin-right: 4px;
+  color: #999;
+}
+
+.input-gas-tip {
+  width: 170px;
+  position: absolute;
+  left: 30px;
+  top: 216px;
+}
+
+.calculation {
+  width: 1035px;
+  font-size: 15px;
+}
+
+.parameteres-main {
+  width: 448px;
+}
+
+.demention-main {
+  width: 62px;
+}
+
+.value {
+  text-align: right;
+}
+
+.note {
+  width: 310px;
+}
+
+.parameteres-sign {
+  text-align: center;
+}
+
+.flex-column {
+  font-size: 16px;
+}
+
+.output-power {
+  width: auto;
+  position: absolute;
+  left: 710px;
+  top: 420px;
+}
+
+.footer{
+  height: 110px;
+  width: 100%;
+  position: absolute;
+  bottom: 5px;
+}
+
+.footer-text {
+  position: absolute;
+  left: 5px;
+  line-height: 28px;
+  color: black!important;
+  font-size: 16px;
+}
+
+.frontend {
+  position: absolute;
+  left: 5px;
+  top: 75px;
+  font-size: 13px;
+  line-height: 15px;
+  color: black!important;
+}
+
+.card-title {
+  margin-bottom: 0;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.bg-success, .bg-danger, .bg-warning {
+  width: 187px;
+  position: absolute;
+  left: 24px;
+  top: 312px;
+  text-align: center;
+}
+
+.img-help {
+  width: 800px
+}
+
+@keyframes hide {
+  from {opacity: 0;}
+  to {opacity: 1;}
+  }
+
+.manual, .formulas, .compressor-cal, .help {
+  animation: hide 0.5s;
+  min-width: 1080px!important;
+  max-width: 1080px!important;
+  margin-left: 213px!important;
+  padding-right: 0!important;
+  padding-top: 50px;
+  margin-bottom: 100px;
+}
+
+.printPDF {
+  margin-left: 0!important;
+}
